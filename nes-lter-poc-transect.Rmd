@@ -1,7 +1,7 @@
 ---
-title: "Minimal EDI package generated using EMLassemblyline and ediutilities"
-author: "Joe Futrelle"
-date: "2022-01-24"
+title: "Transect POC and PON data package generated using EMLassemblyline and ediutilities"
+author: "Joe Futrelle, Kate Morkeski"
+date: "2023-02-14"
 output: html_notebook
 ---
 
@@ -22,27 +22,27 @@ library(lubridate)
 Read example data table
 
 ```{r}
-data_table <- read.csv(here('nes-lter-minimal.csv'))
-data_table$date = ymd_hms(data_table$date)
+data_table <- read.csv(here('nes-lter-transect-poc.csv'))
+#data_table$date_time_utc = ymd_hms(data_table$date)
 ```
 
 Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
-excel_to_template(here('nes-lter-minimal-info'), 'nes-lter-minimal', rights='CC0')
+excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-transect-poc', rights='CC0')
 ```
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
-# use a dummy package ID
-pkg_id <- 'knb-lter-nes.999.1'
+# add package ID
+pkg_id <- 'knb-lter-nes.27.1'
 
 make_eml(here(),
-         dataset.title='Demonstration of minimal EDI package',
-         data.table='nes-lter-minimal.csv',
-         data.table.description='Example NES-LTER data',
-         data.table.name = 'Subset of NES-LTER nutrient data',
+         dataset.title='Particulate organic carbon and nitrogen from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
+         data.table='nes-lter-transect-poc.csv',
+         data.table.description='POC and PON data',
+         data.table.name = 'NES-LTER transect POC and PON data',
          temporal.coverage = temporal_coverage(data_table$date),
          geographic.description = "NES-LTER Transect",
          geographic.coordinates = geographic_coordinates(data_table$latitude, data_table$longitude),
@@ -52,4 +52,5 @@ make_eml(here(),
          package.id = pkg_id)
 
 project_insert(pkg_id)
+
 ```

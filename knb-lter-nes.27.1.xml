@@ -62,7 +62,8 @@
     </associatedParty>
     <pubDate>2023-02-16</pubDate>
     <abstract>
-      <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate micromoles per liter of particulate organic carbon and particulate organic nitrogen. Values are also reported in micrograms per liter and carbon to nitrogen molar ratio. </para>
+      <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. 
+</para>
     </abstract>
     <keywordSet>
       <keyword>organic matter</keyword>

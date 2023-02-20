@@ -41,7 +41,7 @@ pkg_id <- 'knb-lter-nes.27.1'
 make_eml(here(),
          dataset.title='Particulate organic carbon and nitrogen from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
          data.table='nes-lter-transect-poc.csv',
-         data.table.description='POC and PON data',
+         data.table.description='nes-lter-transect-poc',
          data.table.name = 'NES-LTER transect POC and PON data',
          temporal.coverage = temporal_coverage(data_table$date),
          geographic.description = "NES-LTER Transect",

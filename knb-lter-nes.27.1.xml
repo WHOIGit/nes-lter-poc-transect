@@ -271,8 +271,8 @@ We added CTD bottle metadata (time, latitude, longitude, depth) from the REST Ap
       </relatedProject>
     </project>
     <dataTable>
-      <entityName>NES-LTER transect POC and PON data</entityName>
-      <entityDescription>nes-lter-transect-poc</entityDescription>
+      <entityName>nes-lter-transect-poc</entityName>
+      <entityDescription>NES-LTER transect POC and PON data</entityDescription>
       <physical>
         <objectName>nes-lter-transect-poc.csv</objectName>
         <size unit="bytes">32983</size>

@@ -19,7 +19,7 @@ library(here)
 library(lubridate)
 ```
 
-Read example data table
+Read data table
 
 ```{r}
 data_table <- read.csv(here('nes-lter-transect-poc.csv'))

@@ -30,7 +30,7 @@ We provide columns in the data table to indicate quality for carbon and nitrogen
 All below detection limit values were set to zero and quality flag set to 6.
 We added CTD bottle metadata (time, latitude, longitude, depth) from the REST Application Programming Interface (API) of the NES-LTER data system. 
 
-#Data package assembly
+# Data package assembly
 
 Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-poc-transect
 

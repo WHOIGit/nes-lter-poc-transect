@@ -61,7 +61,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>metadataProvider</role>
     </associatedParty>
-    <pubDate>2023-02-20</pubDate>
+    <pubDate>2023-02-21</pubDate>
     <abstract>
       <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. &#13;
 </para>
@@ -141,15 +141,16 @@ Brown polycarbonate sample bottles were filled with 10% hydrochloric acid and so
           <para>For each sample, a known volume was filtered through a combusted GF/F filter under low vacuum suction (5-10 in. Hg). Upon filtering completion, using gloves and dedicated clean forceps, each filter was carefully folded in half with particle side facing in and placed in a pre-labeled combusted foil packet. Samples were stored at -80 degC until further processing for analysis. </para>
           <para># Sample Analysis </para>
           <para>Samples were transferred from the freezer to a 60 degC drying oven and left overnight, then stored in a desiccator until further processing. Wearing gloves on a clean work surface, the samples were folded into a 30 mm ultra clean tin disk (Part no. CE Elantech Inc 25208015) using clean forceps, compressed into a pellet, and stored in a clean well plate in a desiccator until analysis.</para>
-          <para>Samples were analyzed using a Flash EA1112 CHN analyzer with the operational detection limit based on the lowest detectable value of the standard processed with each analyzed batch of samples. The CHN analyzer manufacturer states detection limits of 0.01% or 100 ppm for carbon and nitrogen. The instrument measured organic carbon and nitrogen using 4 pairs of thermal conductivity detectors after high temperature combustion and separation through chemical traps. Certified reference material Acetanilide (Certificate#293514) was combusted with every run and an average recovery was provided with the sample results. </para>
+          <para>Samples were submitted to the Woods Hole Oceanographic Institution's Nutrient Analytical Facility (https://web.whoi.edu/nutrient/current-rates/) where they were analyzed using a Flash EA1112 CHN analyzer with the operational detection limit based on the lowest detectable value of the standard processed with each analyzed batch of samples. The CHN analyzer manufacturer states detection limits of 0.01% or 100 ppm for carbon and nitrogen. The instrument measured organic carbon and nitrogen using 4 pairs of thermal conductivity detectors after high temperature combustion and separation through chemical traps. Certified reference material Acetanilide (Certificate#293514) was combusted with every run and an average recovery was provided with the sample results. </para>
           <para>One or more blanks were collected from each combusted batch of GF/Fs per analysis batch. Blanks were put on the filter rig to mimic standard filtering protocol, but no liquid was filtered. Blanks were then folded into a combusted foil packet and stored at -80 degC with the samples. Sometimes if blanks were not collected in the field, blanks were put into clean labeled petri dishes back on land and put into a dessicator. Blanks were pelletized using ultra clean tin disks as for samples. </para>
           <para># Data Calculations and Quality Control</para>
           <para>The lab group made adjustments to account for volume filtered and corrected for blanks. Blank values were inspected, averaged, and subtracted from initial results. If in the event no blanks were analyzed for a batch of samples, blank values were estimated based on adjacent blank values. Blank-corrected molar values were divided by volume filtered for a final concentration in micromoles per liter. Carbon and nitrogen atomic weights were used to calculate mass in micrograms per liter. The carbon to nitrogen ratio is reported as a molar ratio. </para>
+          <para>We provide columns in the data table to indicate quality for carbon and nitrogen values: 1 good; 2 questionable/suspect; 3 bad; 6 below detection limit; 9 missing data. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab and some peak integrations were manually adjusted.</para>
           <para># Data Cleaning</para>
           <para>All below detection limit values were set to zero and quality flag set to 6.&#13;
 We added CTD bottle metadata (time, latitude, longitude, depth) from the REST Application Programming Interface (API) of the NES-LTER data system. </para>
-          <para># Quality Assurance</para>
-          <para>We provide columns in the data table to indicate quality for carbon and nitrogen values: 1 good; 2 questionable/suspect; 3 bad, 6 below detection limit, 9 missing data. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab and some peak integrations were manually adjusted.</para>
+          <para>#Data package assembly</para>
+          <para>Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-poc-transect</para>
           <para># References</para>
           <para>CE Instruments Flash EA 1112 CHN Analyzer Technical Manual. 1999.</para>
           <para>M. Ehrhardt and W. Koeve. 1999. Determination of particulate organic carbon and nitrogen in Methods of Seawater Analysis (3rd edition), edited by K. Grasshoff, K. Kremling, and M. Ehrhardt. pp 437-444. Wiley. https://doi.org/10.1002/9783527613984.ch17</para>
@@ -256,6 +257,18 @@ We added CTD bottle metadata (time, latitude, longitude, depth) from the REST Ap
       <funding>
         <para>NSF Award OCE-1655686</para>
       </funding>
+      <relatedProject>
+        <title>RAPID: Collaborative Research: Autumn transition in plankton ecology during an ocean heatwave on the Northeast U.S. Shelf</title>
+        <personnel>
+          <individualName>
+            <givenName>Heidi</givenName>
+            <surName>Sosik</surName>
+          </individualName>
+          <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-2102434</funding>
+      </relatedProject>
     </project>
     <dataTable>
       <entityName>NES-LTER transect POC and PON data</entityName>

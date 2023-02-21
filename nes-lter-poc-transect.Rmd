@@ -51,6 +51,6 @@ make_eml(here(),
          user.domain = "LTER",
          package.id = pkg_id)
 
-project_insert(pkg_id)
+project_insert(pkg_id, "parent_project_RAPID.txt")
 
 ```

@@ -61,9 +61,9 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>metadataProvider</role>
     </associatedParty>
-    <pubDate>2023-02-21</pubDate>
+    <pubDate>2023-02-22</pubDate>
     <abstract>
-      <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. &#13;
+      <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. 
 </para>
     </abstract>
     <keywordSet>
@@ -133,7 +133,7 @@
       <methodStep>
         <description>
           <para># Equipment preparation</para>
-          <para>Up to 50 new 25 mm Whatman Glass Microfiber Filters (GF/F) (Fisher catalog number 09-874-64) were placed in a 25 ml glass beaker covered with double-layered aluminum foil and combusted at 450 degC for at least 4 hours. GF/Fs were never combusted more than once. Aluminum foil squares to make packets for sample storage were combusted at the same time as GFFs. &#13;
+          <para>Up to 50 new 25 mm Whatman Glass Microfiber Filters (GF/F) (Fisher catalog number 09-874-64) were placed in a 25 ml glass beaker covered with double-layered aluminum foil and combusted at 450 degC for at least 4 hours. GF/Fs were never combusted more than once. Aluminum foil squares to make packets for sample storage were combusted at the same time as GFFs. 
 Brown polycarbonate sample bottles were filled with 10% hydrochloric acid and soaked for at least 4 hours, then triple-rinsed with water purified using a Millipore Milli-Q lab water system (MilliQ), thoroughly dried, and capped. A freshly acid-washed bottle was used for each sample collected.</para>
           <para># CTD Rosette Bottle Sampling on NES-LTER cruises</para>
           <para>Samples were collected from the water column at multiple depths using Niskin bottles on a CTD rosette system. Surface and subsurface chlorophyll max (SCM) were collected at all stations L1 through L11 and MVCO, with a third depth sometimes collected. Approximately 10% replicate samples were collected on each cruise to check for sampling precision. For each sample, the sample bottle was triple rinsed with sample water and filled. Sample volume collected was a half liter for inshore stations and depths with high fluorescence signal, and 1 liter for offshore more dilute waters. </para>
@@ -147,7 +147,7 @@ Brown polycarbonate sample bottles were filled with 10% hydrochloric acid and so
           <para>The lab group made adjustments to account for volume filtered and corrected for blanks. Blank values were inspected, averaged, and subtracted from initial results. If in the event no blanks were analyzed for a batch of samples, blank values were estimated based on adjacent blank values. Blank-corrected molar values were divided by volume filtered for a final concentration in micromoles per liter. Carbon and nitrogen atomic weights were used to calculate mass in micrograms per liter. The carbon to nitrogen ratio is reported as a molar ratio. </para>
           <para>We provide columns in the data table to indicate quality for carbon and nitrogen values: 1 good; 2 questionable/suspect; 3 bad; 6 below detection limit; 9 missing data. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab and some peak integrations were manually adjusted.</para>
           <para># Data Cleaning</para>
-          <para>All below detection limit values were set to zero and quality flag set to 6.&#13;
+          <para>All below detection limit values were set to zero and quality flag set to 6.
 We added CTD bottle metadata (time, latitude, longitude, depth) from the REST Application Programming Interface (API) of the NES-LTER data system. </para>
           <para># Data package assembly</para>
           <para>Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-poc-transect</para>

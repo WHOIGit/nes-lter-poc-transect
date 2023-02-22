@@ -22,7 +22,7 @@ library(lubridate)
 Read data table
 
 ```{r}
-data_table <- read.csv(here('nes-lter-transect-poc.csv'))
+data_table <- read.csv(here('nes-lter-poc-transect.csv'))
 #data_table$date_time_utc = ymd_hms(data_table$date)
 ```
 
@@ -30,7 +30,7 @@ Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
-excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-transect-poc', rights='CC0')
+excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-poc-transect', rights='CC0')
 ```
 Generate the package and insert the parent project node into the resulting EML
 
@@ -40,9 +40,9 @@ pkg_id <- 'knb-lter-nes.27.1'
 
 make_eml(here(),
          dataset.title='Particulate organic carbon and nitrogen from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
-         data.table='nes-lter-transect-poc.csv',
+         data.table='nes-lter-poc-transect.csv',
          data.table.description='NES-LTER transect POC and PON data',
-         data.table.name = 'nes-lter-transect-poc',
+         data.table.name = 'nes-lter-poc-transect',
          temporal.coverage = temporal_coverage(data_table$date),
          geographic.description = "NES-LTER Transect",
          geographic.coordinates = geographic_coordinates(data_table$latitude, data_table$longitude),

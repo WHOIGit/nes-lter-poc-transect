@@ -9,7 +9,7 @@ Samples were collected from the water column at multiple depths using Niskin bot
 
 # Filtering Protocol
 
-For each sample, a known volume was filtered through a combusted GF/F filter under low vacuum suction (5-10 in. Hg). Upon filtering completion, using gloves and dedicated clean forceps, each filter was carefully folded in half with particle side facing in and placed in a pre-labeled combusted foil packet. Samples were stored at -80 degC until further processing for analysis. 
+For each sample, a known volume was filtered through a combusted GF/F filter under low vacuum suction (~5 in. Hg). Upon filtering completion, using gloves and dedicated clean forceps, each filter was carefully folded in half with particle side facing in and placed in a pre-labeled combusted foil packet. Samples were stored at -80 degC until further processing for analysis. 
 
 # Sample Analysis 
 
@@ -17,7 +17,7 @@ Samples were transferred from the freezer to a 60 degC drying oven and left over
 
 Samples were submitted to the Woods Hole Oceanographic Institution's Nutrient Analytical Facility (https://web.whoi.edu/nutrient/current-rates/) where they were analyzed using a Flash EA1112 CHN analyzer with the operational detection limit based on the lowest detectable value of the standard processed with each analyzed batch of samples. The CHN analyzer manufacturer states detection limits of 0.01% or 100 ppm for carbon and nitrogen. The instrument measured organic carbon and nitrogen using 4 pairs of thermal conductivity detectors after high temperature combustion and separation through chemical traps. Certified reference material Acetanilide (Certificate#293514) was combusted with every run and an average recovery was provided with the sample results. 
 
-One or more blanks were collected from each combusted batch of GF/Fs per analysis batch. Blanks were put on the filter rig to mimic standard filtering protocol, but no liquid was filtered. Blanks were then folded into a combusted foil packet and stored at -80 degC with the samples. Sometimes if blanks were not collected in the field, blanks were put into clean labeled petri dishes back on land and put into a dessicator. Blanks were pelletized using ultra clean tin disks as for samples. 
+One or more blanks were collected from each combusted batch of GF/Fs per analysis batch. Blanks were put on the filter rig to mimic standard filtering protocol, but no liquid was filtered. Blanks were then folded into a combusted foil packet and stored at -80 degC with the samples. Sometimes if blanks were not collected in the field, blanks were put into clean labeled polystyrene petri dishes back on land and put into a dessicator. Blanks were pelletized using ultra clean tin disks as for samples. 
 
 # Data Calculations and Quality Control
 

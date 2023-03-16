@@ -1,11 +1,11 @@
-# Equipment preparation
+# Equipment Preparation
 
 Up to 50 new 25 mm Whatman Glass Microfiber Filters (GF/F) (Fisher catalog number 09-874-64) were placed in a 25 ml glass beaker covered with double-layered aluminum foil and combusted at 450 degC for at least 4 hours. GF/Fs were never combusted more than once. Aluminum foil squares to make packets for sample storage were combusted at the same time as GFFs. 
 Brown polycarbonate sample bottles were filled with 10% hydrochloric acid and soaked for at least 4 hours, then triple-rinsed with water purified using a Millipore Milli-Q lab water system (MilliQ), thoroughly dried, and capped. A freshly acid-washed bottle was used for each sample collected.
 
 # CTD Rosette Bottle Sampling on NES-LTER cruises
 
-Samples were collected from the water column at multiple depths using Niskin bottles on a CTD rosette system. Surface and subsurface chlorophyll max (SCM) were collected at all stations L1 through L11 and MVCO, with a third depth sometimes collected. Approximately 10% replicate samples were collected on each cruise to check for sampling precision. For each sample, the sample bottle was triple rinsed with sample water and filled. Sample volume collected was a half liter for inshore stations and depths with high fluorescence signal, and 1 liter for offshore more dilute waters. 
+Samples were collected from the water column at multiple depths using Niskin bottles on a CTD rosette system. Surface and subsurface chlorophyll max (SCM) were collected at all stations L1 through L11 and MVCO, with a third depth sometimes collected. Approximately 10% replicate samples were collected on each cruise to check sampling precision. For each sample, the sample bottle was triple rinsed with sample water and filled. Sample volume collected was a half liter for inshore stations and depths with high fluorescence signal, and 1 liter for offshore more dilute waters. 
 
 # Filtering Protocol
 
@@ -17,22 +17,26 @@ Samples were transferred from the freezer to a 60 degC drying oven and left over
 
 Samples were submitted to the Woods Hole Oceanographic Institution's Nutrient Analytical Facility (https://web.whoi.edu/nutrient/current-rates/) where they were analyzed using a Flash EA1112 CHN analyzer with the operational detection limit based on the lowest detectable value of the standard processed with each analyzed batch of samples. The CHN analyzer manufacturer states detection limits of 0.01% or 100 ppm for carbon and nitrogen. The instrument measured organic carbon and nitrogen using 4 pairs of thermal conductivity detectors after high temperature combustion and separation through chemical traps. Certified reference material Acetanilide (Certificate#293514) was combusted with every run and an average recovery was provided with the sample results. 
 
-One or more blanks were collected from each combusted batch of GF/Fs per analysis batch. Blanks were put on the filter rig to mimic standard filtering protocol, but no liquid was filtered. Blanks were then folded into a combusted foil packet and stored at -80 degC with the samples. Sometimes if blanks were not collected in the field, blanks were put into clean labeled polystyrene petri dishes back on land and put into a dessicator. Blanks were pelletized using ultra clean tin disks as for samples. 
+One or more blanks were collected from each combusted batch of GF/Fs per analysis batch. Blanks were put on the filter rig to mimic standard filtering protocol, but no liquid was filtered. Blanks were then folded into a combusted foil packet and stored at -80 degC with the samples. Sometimes if blanks were not collected in the field, blanks were put into clean labeled polystyrene Petri dishes back on land and put into a dessicator. Blanks were pelletized using ultra clean tin disks as for samples. 
 
 # Data Calculations and Quality Control
 
 The lab group made adjustments to account for volume filtered and corrected for blanks. Blank values were inspected, averaged, and subtracted from initial results. If in the event no blanks were analyzed for a batch of samples, blank values were estimated based on adjacent blank values. Blank-corrected molar values were divided by volume filtered for a final concentration in micromoles per liter. Carbon and nitrogen atomic weights were used to calculate mass in micrograms per liter. The carbon to nitrogen ratio is reported as a molar ratio. 
 
-We provide columns in the data table to indicate quality for carbon and nitrogen values: 1 good; 2 questionable/suspect; 3 bad; 6 below detection limit; 9 missing data. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab and some peak integrations were manually adjusted.
+We provide columns in the data table to indicate quality for carbon and nitrogen values: 1 good; 2 questionable/suspect; 3 bad; 6 below detection limit; 9 missing data. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.
 
 # Data Cleaning
 
-All below detection limit values were set to zero and quality flag set to 6.
-We added CTD bottle metadata (time, latitude, longitude, depth) from the REST Application Programming Interface (API) of the NES-LTER data system. 
+All values below the detection limit were set to zero, and their quality flags were set to 6.
+CTD bottle metadata (time, latitude, longitude, depth) were added from the REST Application Programming Interface (API) of the NES-LTER data system. 
 
-# Data package assembly
+# Data Package Assembly
 
 Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-poc-transect
+
+# Differences From Previous Version
+
+Version 2 excludes 12 observations that were inadvertently included under cruise EN644 in version 1. Minor adjustments to the methods were made for version 2. The title was adjusted to include parameter abbreviations. 
 
 # References
 

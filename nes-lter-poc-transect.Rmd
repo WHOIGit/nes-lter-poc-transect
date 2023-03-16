@@ -1,7 +1,7 @@
 ---
 title: "Transect POC and PON data package generated using EMLassemblyline and ediutilities"
 author: "Joe Futrelle, Kate Morkeski"
-date: "2023-02-14"
+date: "2023-03-16"
 output: html_notebook
 ---
 
@@ -36,10 +36,10 @@ Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
 # add package ID
-pkg_id <- 'knb-lter-nes.27.1'
+pkg_id <- 'knb-lter-nes.27.2'
 
 make_eml(here(),
-         dataset.title='Particulate organic carbon and nitrogen from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
+         dataset.title='Particulate organic carbon and nitrogen (POC and PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
          data.table='nes-lter-poc-transect.csv',
          data.table.description='NES-LTER transect POC and PON data',
          data.table.name = 'nes-lter-poc-transect',

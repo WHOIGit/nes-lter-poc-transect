@@ -23,11 +23,11 @@ One or more blanks were collected from each combusted batch of GF/Fs per analysi
 
 The lab group made adjustments to account for volume filtered and corrected for blanks. Blank values were inspected, averaged, and subtracted from initial results. If in the event no blanks were analyzed for a batch of samples, blank values were estimated based on adjacent blank values. Blank-corrected molar values were divided by volume filtered for a final concentration in micromoles per liter. Carbon and nitrogen atomic weights were used to calculate mass in micrograms per liter. The carbon to nitrogen ratio is reported as a molar ratio. 
 
-We provide columns in the data table to indicate quality for carbon and nitrogen values: 1 good; 2 questionable/suspect; 3 bad; 6 below detection limit; 9 missing data. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.
+We provide columns in the data table to indicate quality for carbon and nitrogen values. These use IODE Primary Level flags 1 good; 2 not evaluated, not available or unknown; 3 questionable/suspect; 4 bad; 9 missing data; as well as, for nitrogen, the additional flag of 6 below detection limit. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.
 
 # Data Cleaning
 
-All values below the detection limit were set to zero, and their quality flags were set to 6.
+All values below the batch detection limit were set to zero, and their quality flags were set to 6.
 CTD bottle metadata (time, latitude, longitude, depth) were added from the REST Application Programming Interface (API) of the NES-LTER data system. 
 
 # Data Package Assembly
@@ -36,7 +36,7 @@ Data package assembly with metadata templates was completed in R, with documenta
 
 # Differences From Previous Version
 
-Version 2 excludes 12 observations that were inadvertently included under cruise EN644 in version 1. Minor adjustments to the methods were made for version 2. The title was adjusted to include parameter abbreviations. 
+Version 2 excludes 12 observations that were inadvertently included under cruise EN644 in version 1. The flagging system was updated to use IODE flags in version 2. Small adjustments to the methods were made for version 2. The title was adjusted to include parameter abbreviations. 
 
 # References
 

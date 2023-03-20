@@ -11,7 +11,7 @@
     </allow>
   </access>
   <dataset>
-    <title>Particulate organic carbon and nitrogen (POC and PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017</title>
+    <title>Particulate organic carbon (POC) and nitrogen (PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017</title>
     <creator>
       <individualName>
         <givenName>Heidi</givenName>
@@ -61,7 +61,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>metadataProvider</role>
     </associatedParty>
-    <pubDate>2023-03-16</pubDate>
+    <pubDate>2023-03-20</pubDate>
     <abstract>
       <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. &#13;
 </para>
@@ -145,14 +145,14 @@ Brown polycarbonate sample bottles were filled with 10% hydrochloric acid and so
           <para>One or more blanks were collected from each combusted batch of GF/Fs per analysis batch. Blanks were put on the filter rig to mimic standard filtering protocol, but no liquid was filtered. Blanks were then folded into a combusted foil packet and stored at -80 degC with the samples. Sometimes if blanks were not collected in the field, blanks were put into clean labeled polystyrene Petri dishes back on land and put into a dessicator. Blanks were pelletized using ultra clean tin disks as for samples. </para>
           <para># Data Calculations and Quality Control</para>
           <para>The lab group made adjustments to account for volume filtered and corrected for blanks. Blank values were inspected, averaged, and subtracted from initial results. If in the event no blanks were analyzed for a batch of samples, blank values were estimated based on adjacent blank values. Blank-corrected molar values were divided by volume filtered for a final concentration in micromoles per liter. Carbon and nitrogen atomic weights were used to calculate mass in micrograms per liter. The carbon to nitrogen ratio is reported as a molar ratio. </para>
-          <para>We provide columns in the data table to indicate quality for carbon and nitrogen values: 1 good; 2 questionable/suspect; 3 bad; 6 below detection limit; 9 missing data. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.</para>
+          <para>We provide columns in the data table to indicate quality for carbon and nitrogen values. These use IODE Primary Level flags 1 good; 2 not evaluated, not available or unknown; 3 questionable/suspect; 4 bad; 9 missing data; as well as, for nitrogen, the additional flag of 6 below detection limit. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.</para>
           <para># Data Cleaning</para>
-          <para>All values below the detection limit were set to zero, and their quality flags were set to 6.&#13;
+          <para>All values below the batch detection limit were set to zero, and their quality flags were set to 6.&#13;
 CTD bottle metadata (time, latitude, longitude, depth) were added from the REST Application Programming Interface (API) of the NES-LTER data system. </para>
           <para># Data Package Assembly</para>
           <para>Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-poc-transect</para>
           <para># Differences From Previous Version</para>
-          <para>Version 2 excludes 12 observations that were inadvertently included under cruise EN644 in version 1. Minor adjustments to the methods were made for version 2. The title was adjusted to include parameter abbreviations. </para>
+          <para>Version 2 excludes 12 observations that were inadvertently included under cruise EN644 in version 1. The flagging system was updated to use IODE flags in version 2. Small adjustments to the methods were made for version 2. The title was adjusted to include parameter abbreviations. </para>
           <para># References</para>
           <para>CE Instruments Flash EA 1112 CHN Analyzer Technical Manual. 1999.</para>
           <para>M. Ehrhardt and W. Koeve. 1999. Determination of particulate organic carbon and nitrogen in Methods of Seawater Analysis (3rd edition), edited by K. Grasshoff, K. Kremling, and M. Ehrhardt. pp 437-444. Wiley. https://doi.org/10.1002/9783527613984.ch17</para>
@@ -278,7 +278,7 @@ CTD bottle metadata (time, latitude, longitude, depth) were added from the REST 
       <physical>
         <objectName>nes-lter-poc-transect.csv</objectName>
         <size unit="bytes">31808</size>
-        <authentication method="MD5">8ee1d1def05e3425c1e8233348278ffa</authentication>
+        <authentication method="MD5">7cb1148490bb97e06a5a4933e6717a6c</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -542,7 +542,7 @@ CTD bottle metadata (time, latitude, longitude, depth) were added from the REST 
         </attribute>
         <attribute>
           <attributeName>C_quality_flag</attributeName>
-          <attributeDefinition>Laboratory quality flag for carbon data</attributeDefinition>
+          <attributeDefinition>Carbon sample IODE Quality Flag primary level for carbon data</attributeDefinition>
           <storageType>string</storageType>
           <measurementScale>
             <nominal>
@@ -554,19 +554,19 @@ CTD bottle metadata (time, latitude, longitude, depth) were added from the REST 
                   </codeDefinition>
                   <codeDefinition>
                     <code>2</code>
-                    <definition>questionable</definition>
+                    <definition>quality not evaluated, not available or unknown</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>3</code>
+                    <definition>questionable/suspect</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
                     <definition>bad</definition>
                   </codeDefinition>
                   <codeDefinition>
-                    <code>6</code>
-                    <definition>below detection limit</definition>
-                  </codeDefinition>
-                  <codeDefinition>
                     <code>9</code>
-                    <definition>missing</definition>
+                    <definition>missing data</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -575,7 +575,7 @@ CTD bottle metadata (time, latitude, longitude, depth) were added from the REST 
         </attribute>
         <attribute>
           <attributeName>N_quality_flag</attributeName>
-          <attributeDefinition>Laboratory quality flag for nitrogen data</attributeDefinition>
+          <attributeDefinition>Nitrogen sample IODE Quality Flag primary level with lab flag for value below detection</attributeDefinition>
           <storageType>string</storageType>
           <measurementScale>
             <nominal>
@@ -587,10 +587,14 @@ CTD bottle metadata (time, latitude, longitude, depth) were added from the REST 
                   </codeDefinition>
                   <codeDefinition>
                     <code>2</code>
-                    <definition>questionable</definition>
+                    <definition>quality not evaluated, not available or unknown</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>3</code>
+                    <definition>questionable/suspect</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
                     <definition>bad</definition>
                   </codeDefinition>
                   <codeDefinition>
@@ -599,7 +603,7 @@ CTD bottle metadata (time, latitude, longitude, depth) were added from the REST 
                   </codeDefinition>
                   <codeDefinition>
                     <code>9</code>
-                    <definition>missing</definition>
+                    <definition>missing data</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>

@@ -39,7 +39,7 @@ Generate the package and insert the parent project node into the resulting EML
 pkg_id <- 'knb-lter-nes.27.2'
 
 make_eml(here(),
-         dataset.title='Particulate organic carbon and nitrogen (POC and PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
+         dataset.title='Particulate organic carbon (POC) and nitrogen (PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',
          data.table='nes-lter-poc-transect.csv',
          data.table.description='NES-LTER transect POC and PON data',
          data.table.name = 'nes-lter-poc-transect',

@@ -61,7 +61,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>metadataProvider</role>
     </associatedParty>
-    <pubDate>2023-03-20</pubDate>
+    <pubDate>2023-03-27</pubDate>
     <abstract>
       <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. &#13;
 </para>
@@ -278,7 +278,7 @@ CTD bottle metadata (time, latitude, longitude, depth) were added from the REST 
       <physical>
         <objectName>nes-lter-poc-transect.csv</objectName>
         <size unit="bytes">31808</size>
-        <authentication method="MD5">7cb1148490bb97e06a5a4933e6717a6c</authentication>
+        <authentication method="MD5">eea842fb1e8fea4456613a9d4f7b7f6d</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>

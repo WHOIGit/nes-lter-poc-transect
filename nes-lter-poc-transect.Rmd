@@ -36,7 +36,7 @@ Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
 # add package ID
-pkg_id <- 'knb-lter-nes.27.2'
+pkg_id <- 'knb-lter-nes.27.3'
 
 make_eml(here(),
          dataset.title='Particulate organic carbon (POC) and nitrogen (PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',

@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.27.3" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <title>Particulate organic carbon (POC) and nitrogen (PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017</title>
+    <creator>
+      <individualName>
+        <givenName>Heidi</givenName>
+        <givenName>M</givenName>
+        <surName>Sosik</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>E.</givenName>
+        <givenName>Taylor</givenName>
+        <surName>Crockford</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>ecrockford@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-2122-0462</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Emily</givenName>
+        <surName>Peacock</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>epeacock@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-0194-7282</userId>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Joe</givenName>
+        <surName>Futrelle</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>jfutrelle@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-4537-5853</userId>
+      <role>softwareDeveloper</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Kate</givenName>
+        <surName>Morkeski</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>kmorkeski@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
+      <role>metadataProvider</role>
+    </associatedParty>
+    <pubDate>2023-03-30</pubDate>
+    <abstract>
+      <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. 
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword>organic matter</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>chemistry</keyword>
+      <keyword>oceanography</keyword>
+      <keyword>seawater</keyword>
+      <keyword>particulate organic carbon</keyword>
+      <keyword>organic nitrogen</keyword>
+      <keyword>POC</keyword>
+      <keyword>carbon</keyword>
+      <keyword>nitrogen</keyword>
+      <keyword>organic matter</keyword>
+      <keyword>carbon to nitrogen ratio</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>PON</keyword>
+      <keyword>particulate organic nitrogen</keyword>
+      <keyword>CHN</keyword>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Northeast U.S. Continental Shelf</keyword>
+      <keywordThesaurus>NOAA Large Marine Ecosystems</keywordThesaurus>
+    </keywordSet>
+    <additionalInfo>
+      <para>Special thanks to the Ocean Observatories Initiative (OOI) funded by the National Science Foundation under Cooperative Agreement No. 1743430 for collaboration on the cruises on R/V Neil Armstrong included in this package.</para>
+      <para>Special thanks to Paul Henderson at the WHOI Nutrient Analytical Facility for analyzing all samples collected for this data package. </para>
+    </additionalInfo>
+    <intellectualRights>
+      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>NES-LTER Transect</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-70.9096</westBoundingCoordinate>
+          <eastBoundingCoordinate>-70.5245</eastBoundingCoordinate>
+          <northBoundingCoordinate>41.3246</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7576</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2017-10-22</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021-02-07</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+    </maintenance>
+    <contact>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <positionName>Nes-Lter Information Manager</positionName>
+      <electronicMailAddress>lter-nes-info@whoi.edu</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para># Equipment Preparation</para>
+          <para>Up to 50 new 25 mm Whatman Glass Microfiber Filters (GF/F) (Fisher catalog number 09-874-64) were placed in a 25 ml glass beaker covered with double-layered aluminum foil and combusted at 450 degC for at least 4 hours. GF/Fs were never combusted more than once. Aluminum foil squares to make packets for sample storage were combusted at the same time as GFFs. 
+Brown polycarbonate sample bottles were filled with 10% hydrochloric acid and soaked for at least 4 hours, then triple-rinsed with water purified using a Millipore Milli-Q lab water system (MilliQ), thoroughly dried, and capped. A freshly acid-washed bottle was used for each sample collected.</para>
+          <para># CTD Rosette Bottle Sampling on NES-LTER cruises</para>
+          <para>Samples were collected from the water column at multiple depths using Niskin bottles on a CTD rosette system. Surface and subsurface chlorophyll max (SCM) were collected at all stations L1 through L11 and MVCO, with a third depth sometimes collected. Approximately 10% replicate samples were collected on each cruise to check sampling precision. For each sample, the sample bottle was triple rinsed with sample water and filled. Sample volume collected was a half liter for inshore stations and depths with high fluorescence signal, and 1 liter for offshore more dilute waters. </para>
+          <para># Filtering Protocol</para>
+          <para>For each sample, a known volume was filtered through a combusted GF/F filter under low vacuum suction (~5 in. Hg). Upon filtering completion, using gloves and dedicated clean forceps, each filter was carefully folded in half with particle side facing in and placed in a pre-labeled combusted foil packet. Samples were stored at -80 degC until further processing for analysis. </para>
+          <para># Sample Analysis </para>
+          <para>Samples were transferred from the freezer to a 60 degC drying oven and left overnight, then stored in a desiccator until further processing. Wearing gloves on a clean work surface, the samples were folded into a 30 mm ultra clean tin disk (Part no. CE Elantech Inc 25208015) using clean forceps, compressed into a pellet, and stored in a clean well plate in a desiccator until analysis.</para>
+          <para>Samples were submitted to the Woods Hole Oceanographic Institution's Nutrient Analytical Facility (https://web.whoi.edu/nutrient/current-rates/) where they were analyzed using a Flash EA1112 CHN analyzer with the operational detection limit based on the lowest detectable value of the standard processed with each analyzed batch of samples. The CHN analyzer manufacturer states detection limits of 0.01% or 100 ppm for carbon and nitrogen. The instrument measured organic carbon and nitrogen using 4 pairs of thermal conductivity detectors after high temperature combustion and separation through chemical traps. Certified reference material Acetanilide (Certificate#293514) was combusted with every run and an average recovery was provided with the sample results. </para>
+          <para>One or more blanks were collected from each combusted batch of GF/Fs per analysis batch. Blanks were put on the filter rig to mimic standard filtering protocol, but no liquid was filtered. Blanks were then folded into a combusted foil packet and stored at -80 degC with the samples. Sometimes if blanks were not collected in the field, blanks were put into clean labeled polystyrene Petri dishes back on land and put into a dessicator. Blanks were pelletized using ultra clean tin disks as for samples. </para>
+          <para># Data Calculations and Quality Control</para>
+          <para>The lab group made adjustments to account for volume filtered and corrected for blanks. Blank values were inspected, averaged, and subtracted from initial results. If in the event no blanks were analyzed for a batch of samples, blank values were estimated based on adjacent blank values. Blank-corrected molar values were divided by volume filtered for a final concentration in micromoles per liter. Carbon and nitrogen atomic weights were used to calculate mass in micrograms per liter. The carbon to nitrogen ratio is reported as a molar ratio. </para>
+          <para>We provide columns in the data table to indicate quality for carbon and nitrogen values. These use IODE Primary Level flags 1 good; 2 not evaluated, not available or unknown; 3 questionable/suspect; 4 bad; 9 missing data; as well as, for nitrogen, the additional flag of 6 below detection limit. Samples with a flag of 3 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.</para>
+          <para># Data Cleaning</para>
+          <para>All values below the batch detection limit were set to zero, and their quality flags were set to 6.
+CTD bottle metadata (time, latitude, longitude, depth) were added from the REST Application Programming Interface (API) of the NES-LTER data system. </para>
+          <para># Data Package Assembly</para>
+          <para>Data package assembly with metadata templates was completed in R, with documentation available at https://github.com/WHOIGit/nes-lter-poc-transect</para>
+          <para># Differences From Previous Version</para>
+          <para>Version 2 excludes 12 observations that were inadvertently included under cruise EN644 in version 1. The flagging system was updated to use IODE flags in version 2. Small adjustments to the methods were made for version 2. The title was adjusted to include parameter abbreviations. </para>
+          <para># References</para>
+          <para>CE Instruments Flash EA 1112 CHN Analyzer Technical Manual. 1999.</para>
+          <para>M. Ehrhardt and W. Koeve. 1999. Determination of particulate organic carbon and nitrogen in Methods of Seawater Analysis (3rd edition), edited by K. Grasshoff, K. Kremling, and M. Ehrhardt. pp 437-444. Wiley. https://doi.org/10.1002/9783527613984.ch17</para>
+          <para>Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen from seawater. Limnology and Oceanography, 19, 984-989.</para>
+          <para/>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Northeast U.S. Shelf LTER</title>
+      <personnel>
+        <individualName>
+          <givenName>Heidi</givenName>
+          <surName>Sosik</surName>
+        </individualName>
+        <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
+        <role>Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Stace</givenName>
+          <surName>Beaulieu</surName>
+        </individualName>
+        <electronicMailAddress>sbeaulieu@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-2609-5453</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Changsheng</givenName>
+          <surName>Chen</surName>
+        </individualName>
+        <electronicMailAddress>c1chen@umassd.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-8715-6101</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Rubao</givenName>
+          <surName>Ji</surName>
+        </individualName>
+        <electronicMailAddress>rji@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-8839-5427</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Steven</givenName>
+          <surName>Lentz</surName>
+        </individualName>
+        <electronicMailAddress>slentz@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-7498-0281</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Joel</givenName>
+          <surName>Llopiz</surName>
+        </individualName>
+        <electronicMailAddress>jllopiz@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-7584-7471</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Susanne</givenName>
+          <surName>Menden-Deuer</surName>
+        </individualName>
+        <electronicMailAddress>smenden@uri.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-8434-4251</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Michael</givenName>
+          <surName>Neubert</surName>
+        </individualName>
+        <electronicMailAddress>mneubert@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-8820-5008</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Tatiana</givenName>
+          <surName>Rynearson</surName>
+        </individualName>
+        <electronicMailAddress>rynearson@uri.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-2951-0066</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Rachel</givenName>
+          <surName>Stanley</surName>
+        </individualName>
+        <electronicMailAddress>rstanle2@wellesley.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-4860-2476</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <abstract>
+        <para>The Northeast U.S. Shelf (NES) Long-Term Ecological Research (LTER) project integrates observations, experiments, and models to understand and predict how planktonic food webs are changing, and how those changes impact the productivity of higher trophic levels. The NES-LTER is co-located with the Northeast U.S. Continental Shelf Large Marine Ecosystem, spanning the Middle Atlantic Bight and Gulf of Maine. Our focal cross-shelf transect extends about 150 km southward from Martha’s Vineyard, MA, to just beyond the shelf break. Our overarching question is: How is climate change impacting the pelagic NES ecosystem and, in particular, affecting the relationship between compositional (e.g., species diversity and size structure) and aggregate (e.g., rates of primary production, and transfer of energy to important forage fish species) variability?</para>
+      </abstract>
+      <funding>
+        <para>NSF Award OCE-1655686</para>
+      </funding>
+      <relatedProject>
+        <title>RAPID: Collaborative Research: Autumn transition in plankton ecology during an ocean heatwave on the Northeast U.S. Shelf</title>
+        <personnel>
+          <individualName>
+            <givenName>Heidi</givenName>
+            <surName>Sosik</surName>
+          </individualName>
+          <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-2102434</funding>
+      </relatedProject>
+    </project>
+    <dataTable>
+      <entityName>nes-lter-poc-transect</entityName>
+      <entityDescription>NES-LTER transect POC and PON data</entityDescription>
+      <physical>
+        <objectName>nes-lter-poc-transect.csv</objectName>
+        <size unit="bytes">31808</size>
+        <authentication method="MD5">eea842fb1e8fea4456613a9d4f7b7f6d</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>cruise</attributeName>
+          <attributeDefinition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>cast</attributeName>
+          <attributeDefinition>CTD rosette cast number chronological per cruise</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">45</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>niskin</attributeName>
+          <attributeDefinition>Rosette bottle position number</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">23</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>date_time_utc</attributeName>
+          <attributeDefinition>Date and time in UTC when rosette bottle closed</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss+hh:mm</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>latitude</attributeName>
+          <attributeDefinition>Ship's latitude when rosette bottle closed</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">39.7576</minimum>
+                  <maximum exclusive="false">41.3246</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>longitude</attributeName>
+          <attributeDefinition>Ship's longitude when rosette bottle closed</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-70.9096</minimum>
+                  <maximum exclusive="false">-70.5245</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depth</attributeName>
+          <attributeDefinition>Depth of sample below sea surface http://vocab.nerc.ac.uk/collection/P09/current/DEPH/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.79</minimum>
+                  <maximum exclusive="false">99.49</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>replicate</attributeName>
+          <attributeDefinition>Lowercase letter indicating replicate subsample drawn from the same rosette bottle</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Lowercase letter indicating replicate subsample drawn from the same rosette bottle</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>POC_micromolar</attributeName>
+          <attributeDefinition>Particulate organic carbon in micromoles per liter http://vocab.nerc.ac.uk/collection/P01/current/CORGPGFF/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>micromolePerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.796</minimum>
+                  <maximum exclusive="false">47.048</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>PON_micromolar</attributeName>
+          <attributeDefinition>Particulate organic nitrogen in micromoles per liter http://vocab.nerc.ac.uk/collection/P01/current/NTOTPGFF/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>micromolePerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">6.86</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>POC_microg_perL</attributeName>
+          <attributeDefinition>Particulate organic carbon in micrograms per liter http://vocab.nerc.ac.uk/collection/P01/current/CORGPGFF/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>microgramsPerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">9.564</minimum>
+                  <maximum exclusive="false">565.083</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>PON_microg_perL</attributeName>
+          <attributeDefinition>Particulate organic nitrogen in micrograms per liter http://vocab.nerc.ac.uk/collection/P01/current/NTOTPGFF/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>microgramsPerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">96.09</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>C_to_N_molar_ratio</attributeName>
+          <attributeDefinition>Molar ratio of particulate organic carbon to particulate organic nitrogen</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.624</minimum>
+                  <maximum exclusive="false">33.4</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>C_quality_flag</attributeName>
+          <attributeDefinition>Carbon sample IODE Quality Flag primary level for carbon data</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>quality not evaluated, not available or unknown</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>questionable/suspect</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>bad</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>missing data</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>N_quality_flag</attributeName>
+          <attributeDefinition>Nitrogen sample IODE Quality Flag primary level with lab flag for value below detection</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>quality not evaluated, not available or unknown</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>questionable/suspect</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>bad</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>below detection limit</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>missing data</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>322</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <emlEditor>
+        <app>EMLassemblyline</app>
+        <release>3.5.5</release>
+      </emlEditor>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

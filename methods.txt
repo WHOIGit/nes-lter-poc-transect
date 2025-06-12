@@ -36,11 +36,7 @@ Data package assembly with metadata templates was completed in R, with documenta
 
 # Differences From Previous Version
 
-Version 3 includes XX more cruises.
-XXXXXXXXXXXXX
-ADDMORE HERE
-XXXXXXXXXXXXX
-Small adjustments to the methods were made for version 2. 
+Version 3 includes 5 more cruises. Small adjustments to the methods write-up were made for version 3. 
 
 # References
 

@@ -17,20 +17,26 @@ library(EMLassemblyline)
 library(ediutilities)
 library(here)
 library(lubridate)
+library(dplyr)
+
 ```
 
 Read data table
 
 ```{r}
-data_table <- read.csv(here('nes-lter-poc-transect.csv'))
-#data_table$date_time_utc = ymd_hms(data_table$date)
+data_table <- read.csv(here('nes-lter-poc-transect-input.csv'))
+data_table$date_time_utc = ymd_hms(data_table$date)
+data_table <- data_table |> arrange(date_time_utc)
+write.csv(data_table,'nes-lter-poc-transect.csv', na = "NaN", row.names=FALSE)
+
 ```
 
 Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
-excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-poc-transect', rights='CC0')
+excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-poc-transect', rights='CC0', file.type = ".md")
+#excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-poc-transect', rights='CC0')
 ```
 Generate the package and insert the parent project node into the resulting EML
 

@@ -36,7 +36,7 @@ Data package assembly with metadata templates was completed in R, with documenta
 
 # Differences From Previous Version
 
-Version 3 includes 5 more cruises. Small adjustments to the methods write-up were made for version 3. 
+Version 3 includes 5 more cruises as well as AR24A cast 1. Small adjustments to the methods write-up were made for version 3. 
 
 # References
 

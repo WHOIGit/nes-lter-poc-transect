@@ -156,7 +156,7 @@ One or more blanks were collected from each combusted batch of GF/Fs per analysi
 
 The lab group made adjustments to account for volume filtered and corrected for blanks. Blank values were inspected, averaged, and subtracted from initial results. If in the event no blanks were analyzed for a batch of samples, blank values were estimated based on adjacent blank values. Blank-corrected molar values were divided by volume filtered for a final concentration in micromoles per liter. Carbon and nitrogen atomic weights were used to calculate mass in micrograms per liter. The carbon to nitrogen ratio is reported as a molar ratio. 
 
-We provide columns in the data table to indicate quality for carbon and nitrogen values. These use IODE Primary Level flags 1 good; 2 not evaluated, not available or unknown; 3 questionable/suspect; 4 bad; 9 missing data; as well as, the additional flag of 6 below detection limit. Samples with a flag of 4 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, nitrogen below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.
+We provide columns in the data table to indicate quality for carbon and nitrogen values. These use IODE Primary Level flags 1 good; 2 not evaluated, not available or unknown; 3 questionable/suspect; 4 bad; 9 missing data; as well as, the additional flag of 6 below detection limit. Samples with a flag of 4 (bad) are provided with a value of NaN. The carbon to nitrogen ratio is set to NaN when the ratio is unable to be calculated (missing data, sample below detection limit, flagged bad values). Factors considered in quality control were magnitude of sample, the carbon to nitrogen ratio, and any additional notes during sample collection or sample analysis. For suspicious samples, CHN analyzer output of carbon and nitrogen peaks were manually inspected by the analytical lab, and some peak integrations were manually adjusted.
 
 # Data Cleaning
 
@@ -317,8 +317,8 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
       <entityDescription>NES-LTER transect POC and PON data</entityDescription>
       <physical>
         <objectName>nes-lter-poc-transect.csv</objectName>
-        <size unit="bytes">45541</size>
-        <authentication method="MD5">7cf4c87fdfd3a85b5f3dc3a0d6e2790e</authentication>
+        <size unit="bytes">45526</size>
+        <authentication method="MD5">2082ff873be2fc626b81c97f96c6759a</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -477,7 +477,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">-0.835</minimum>
+                  <minimum exclusive="false">0</minimum>
                   <maximum exclusive="false">107.203</maximum>
                 </bounds>
               </numericDomain>
@@ -523,7 +523,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">-10.023</minimum>
+                  <minimum exclusive="false">0</minimum>
                   <maximum exclusive="false">1287.58</maximum>
                 </bounds>
               </numericDomain>
@@ -569,7 +569,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">-13.867</minimum>
+                  <minimum exclusive="false">1.36</minimum>
                   <maximum exclusive="false">59.678</maximum>
                 </bounds>
               </numericDomain>
@@ -582,7 +582,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
         </attribute>
         <attribute>
           <attributeName>C_quality_flag</attributeName>
-          <attributeDefinition>Carbon sample IODE Quality Flag primary level for carbon data</attributeDefinition>
+          <attributeDefinition>Carbon sample IODE Quality Flag primary level for carbon data with lab flag for value below detection</attributeDefinition>
           <storageType>string</storageType>
           <measurementScale>
             <nominal>
@@ -603,6 +603,10 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
                   <codeDefinition>
                     <code>4</code>
                     <definition>bad</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>below detection limit</definition>
                   </codeDefinition>
                   <codeDefinition>
                     <code>9</code>

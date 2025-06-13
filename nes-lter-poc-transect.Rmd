@@ -27,6 +27,12 @@ Read data table
 data_table <- read.csv(here('nes-lter-poc-transect-input.csv'))
 data_table$date_time_utc = ymd_hms(data_table$date)
 data_table <- data_table |> arrange(date_time_utc)
+
+data_table <- data_table |>
+  mutate(POC_micromolar = case_when(C_quality_flag == 6 ~ 0, TRUE ~POC_micromolar)) |>
+  mutate(POC_microg_perL = case_when(C_quality_flag == 6 ~ 0, TRUE ~POC_microg_perL)) |>
+  mutate(C_to_N_molar_ratio = case_when(C_quality_flag == 6 ~ NA, TRUE ~ C_to_N_molar_ratio))
+
 write.csv(data_table,'nes-lter-poc-transect.csv', na = "NaN", row.names=FALSE)
 
 ```

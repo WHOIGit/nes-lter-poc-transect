@@ -46,3 +46,9 @@ M. Ehrhardt and W. Koeve. 1999. Determination of particulate organic carbon and 
 
 Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen from seawater. Limnology and Oceanography, 19, 984-989.
 
+# Related Datasets
+
+Fontaine, D.N. and T.A. Rynearson. 2023. Size-fractionated net primary productivity (NPP) estimates based on 13C uptake during cruises along the Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect, ongoing since 2019 ver 4. Environmental Data Initiative. https://doi.org/10.6073/pasta/95dde1f0c5bb3da0cac9bc47be2526b0 (Accessed 2026-11-24).
+
+Northeast U.S. Shelf LTER, H.M. Sosik, and E.T. Crockford. 2025. Event logs from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017 ver 2. Environmental Data Initiative. https://doi.org/10.6073/pasta/0cde75ba26923d87e107a1c440613209 (Accessed 2025-07-28).
+

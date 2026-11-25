@@ -18,6 +18,7 @@ library(ediutilities)
 library(here)
 library(lubridate)
 library(dplyr)
+library(ggplot2)
 
 ```
 
@@ -29,26 +30,87 @@ data_table$date_time_utc = ymd_hms(data_table$date)
 data_table <- data_table |> arrange(date_time_utc)
 
 data_table <- data_table |>
-  mutate(POC_micromolar = case_when(C_quality_flag == 6 ~ 0, TRUE ~POC_micromolar)) |>
-  mutate(POC_microg_perL = case_when(C_quality_flag == 6 ~ 0, TRUE ~POC_microg_perL)) |>
+  mutate(POC_micromolar = case_when(C_quality_flag == 6 ~ 0, TRUE ~ POC_micromolar)) |>
+  mutate(POC_microg_perL = case_when(C_quality_flag == 6 ~ 0, TRUE ~ POC_microg_perL)) |>
+  mutate(PON_micromolar = case_when(N_quality_flag == 6 ~ 0, TRUE ~ PON_micromolar)) |>
+  mutate(PON_microg_perL = case_when(N_quality_flag == 6 ~ 0, TRUE ~ PON_microg_perL)) |>
   mutate(C_to_N_molar_ratio = case_when(C_quality_flag == 6 ~ NA, TRUE ~ C_to_N_molar_ratio))
 
 write.csv(data_table,'nes-lter-poc-transect.csv', na = "NaN", row.names=FALSE)
 
 ```
 
+Basic plots
+
+```{r}
+
+data_table$C_quality_flag <- as.factor(data_table$C_quality_flag)
+data_table$N_quality_flag <- as.factor(data_table$N_quality_flag)
+
+ggplot(data_table, aes(x = date_time_utc, y = POC_microg_perL, color = C_quality_flag)) +
+  geom_point() +
+  scale_color_viridis_d(option = "turbo")+
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal()
+
+ggplot(data_table, aes(x = date_time_utc, y = PON_microg_perL, color = N_quality_flag)) +
+  geom_point() +
+  scale_color_viridis_d(option = "turbo")+
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal()
+
+ggplot(data_table, aes(x = date_time_utc, y = C_to_N_molar_ratio, color = N_quality_flag)) +
+  geom_point() +
+  scale_color_viridis_d(option = "turbo")+
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") +
+  theme_minimal()
+
+```
+
+
+Plot to check coordinates
+
+```{r}
+
+# Map extent from the underway track, with a small margin
+pad <- 0.15
+lon_lim <- range(data_table$longitude) + c(-pad*4, pad*4)
+lat_lim <- range(data_table$latitude) + c(-pad, pad)
+
+coast <- map_data('usa')
+
+ggplot() +
+  geom_point(data = data_table, aes(x = longitude, y = latitude, color = POC_micromolar), size = 1) +
+  scale_color_viridis_c(name = 'POC (micromoles/L)') +
+  geom_polygon(data = coast, aes(x = long, y = lat, group = group),
+               fill = 'gray80', color = 'gray40', linewidth = 0.3) +
+  theme(panel.border = element_rect(color = "black", fill = NA, linewidth = 0.5)) +
+  coord_quickmap(xlim = lon_lim, ylim = lat_lim) +
+  labs(x = 'Longitude', y = 'Latitude')
+
+ggplot() +
+  geom_point(data = data_table, aes(x = longitude, y = latitude, color = PON_micromolar), size = 1) +
+  scale_color_viridis_c(name = 'PON (micromoles/L)') +
+  geom_polygon(data = coast, aes(x = long, y = lat, group = group),
+               fill = 'gray80', color = 'gray40', linewidth = 0.3) +
+  theme(panel.border = element_rect(color = "black", fill = NA, linewidth = 0.5)) +
+  coord_quickmap(xlim = lon_lim, ylim = lat_lim) +
+  labs(x = 'Longitude', y = 'Latitude')
+
+```
 Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
-excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-poc-transect', rights='CC0', file.type = ".md")
-#excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-poc-transect', rights='CC0')
+
+excel_to_template(here('nes-lter-poc-transect-info'), 'nes-lter-poc-transect', rights='CC0', file_type = ".md")
+
 ```
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
 # add package ID
-pkg_id <- 'knb-lter-nes.27.3'
+pkg_id <- 'knb-lter-nes.27.4'
 
 make_eml(here(),
          dataset.title='Particulate organic carbon (POC) and nitrogen (PON) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017',

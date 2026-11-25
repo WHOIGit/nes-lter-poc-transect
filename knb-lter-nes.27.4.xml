@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.27.3" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.27.4" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
@@ -60,7 +60,7 @@
       <electronicMailAddress>jkoch@whoi.edu</electronicMailAddress>
       <role>softwareDeveloper</role>
     </associatedParty>
-    <pubDate>2025-06-13</pubDate>
+    <pubDate>2026-11-25</pubDate>
     <abstract>
       <para>Particulate organic carbon and nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2017). Sampling frequency is approximately seasonal. Samples were filtered and collected on combusted glass fiber filters, pelletized using ultra clean tin disks, and combusted using a Flash EA1112 CHN analyzer to calculate concentrations of particulate organic carbon and particulate organic nitrogen in micromoles per liter. Values are also reported as concentrations in micrograms per liter and carbon to nitrogen molar ratio. 
 </para>
@@ -105,8 +105,8 @@
         <boundingCoordinates>
           <westBoundingCoordinate>-70.9974</westBoundingCoordinate>
           <eastBoundingCoordinate>-70.5245</eastBoundingCoordinate>
-          <northBoundingCoordinate>41.3246</northBoundingCoordinate>
-          <southBoundingCoordinate>39.7576</southBoundingCoordinate>
+          <northBoundingCoordinate>41.3274</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7551</southBoundingCoordinate>
         </boundingCoordinates>
       </geographicCoverage>
       <temporalCoverage>
@@ -115,7 +115,7 @@
             <calendarDate>2017-10-22</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2022-08-03</calendarDate>
+            <calendarDate>2025-10-23</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -169,7 +169,7 @@ Data package assembly with metadata templates was completed in R, with documenta
 
 # Differences From Previous Version
 
-Version 3 includes 5 more cruises as well as AR24A cast 1. Small adjustments to the methods write-up were made for version 3. 
+Version 4 adds data from 6 cruises conducted between January 2023 and October 2025. 
 
 # References
 
@@ -178,6 +178,19 @@ CE Instruments Flash EA 1112 CHN Analyzer Technical Manual. 1999.
 M. Ehrhardt and W. Koeve. 1999. Determination of particulate organic carbon and nitrogen in Methods of Seawater Analysis (3rd edition), edited by K. Grasshoff, K. Kremling, and M. Ehrhardt. pp 437-444. Wiley. https://doi.org/10.1002/9783527613984.ch17
 
 Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen from seawater. Limnology and Oceanography, 19, 984-989.
+
+# Related Datasets
+
+Values for samples collected at station MVCO are also published in EDI package knb-lter-nes.28.
+https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-nes&amp;identifier=28&amp;revision=newest
+
+Additional NES-LTER POC values are in the following data package:
+
+Fontaine, D.N. and T.A. Rynearson. 2023. Size-fractionated net primary productivity (NPP) estimates based on 13C uptake during cruises along the Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect, ongoing since 2019 ver 4. Environmental Data Initiative. https://doi.org/10.6073/pasta/95dde1f0c5bb3da0cac9bc47be2526b0 (Accessed 2026-11-24).
+
+Additional metadata are in the following data package:
+
+Northeast U.S. Shelf LTER, H.M. Sosik, and E.T. Crockford. 2025. Event logs from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2017 ver 2. Environmental Data Initiative. https://doi.org/10.6073/pasta/0cde75ba26923d87e107a1c440613209 (Accessed 2025-07-28).
 
 </markdown>
         </description>
@@ -317,8 +330,8 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
       <entityDescription>NES-LTER transect POC and PON data</entityDescription>
       <physical>
         <objectName>nes-lter-poc-transect.csv</objectName>
-        <size unit="bytes">45526</size>
-        <authentication method="MD5">2082ff873be2fc626b81c97f96c6759a</authentication>
+        <size unit="bytes">64118</size>
+        <authentication method="MD5">08866dd77f0d78720bf5bb9b9ddd38cd</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -377,7 +390,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
                 <numberType>natural</numberType>
                 <bounds>
                   <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">23</maximum>
+                  <maximum exclusive="false">24</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -406,8 +419,8 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">39.7576</minimum>
-                  <maximum exclusive="false">41.3246</maximum>
+                  <minimum exclusive="false">39.7551</minimum>
+                  <maximum exclusive="false">41.3274</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -501,7 +514,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">11.157</maximum>
+                  <maximum exclusive="false">11.529</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -547,7 +560,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">156.274</maximum>
+                  <maximum exclusive="false">161.486</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -569,7 +582,7 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">1.36</minimum>
+                  <minimum exclusive="false">0.253</minimum>
                   <maximum exclusive="false">59.678</maximum>
                 </bounds>
               </numericDomain>
@@ -655,14 +668,14 @@ Sharp, J. H. 1974. Improved analysis for particulate organic carbon and nitrogen
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>471</numberOfRecords>
+      <numberOfRecords>665</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
     <metadata>
       <emlEditor>
         <app>EMLassemblyline</app>
-        <release>3.5.7</release>
+        <release>3.6.0</release>
       </emlEditor>
     </metadata>
   </additionalMetadata>
